@@ -1,0 +1,10 @@
+
+October 16, 2015
+Used links from <docpollard.com/HARs.html>
+Links go to hg17 version of aln, then go to 'View' then 'Other genomes (Convert)'
+Use hg19 version for aln, click on link and then click on aln to get
+output for aln seqs.
+
+Saved seqs as text file, then processed into fasta file using the
+'parse_ucsc_aln.py' script.
+
