@@ -10,7 +10,7 @@ args = sys.argv[1:]
 if len(args) != 1 :
     print("Error!  Argument needed: input file name")
     sys.exit()
-    
+
 filename = args[0]
 fi = open(filename, 'r')
 fo = open(filename + '.fa', 'w')
