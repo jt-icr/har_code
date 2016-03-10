@@ -19,12 +19,12 @@ from re import compile, sub
 
 #Put fasta files (*.fa extension) in list
 gene_files = [file for file in listdir('.') if file.endswith('fa')]
- 
+
 #Run muscle on each gene file, program  info will print to stdout
 for gene_file in gene_files:
     fo = gene_file.rsplit('.',1)[0] + '.aln'
     call(['muscle', '-in', gene_file, '-out', fo])
-    
+
 #Print a list of the outfiles
 for f in listdir(): 
     if f.endswith('aln'):
@@ -82,9 +82,4 @@ system('./topd_v3.3.pl', '-f', 'all_trees.nwk', '-out',
 
 Can remove gene headings from each line with the following one-liner:
 "perl -pi -e 's/^har.*\t//g' all_trees.nwk" for other tree comp programs.
-"""      
-
-
-
-
-    
+"""
